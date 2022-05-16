@@ -30,7 +30,6 @@ const replyCourses = (event) => {
     bubble.body.contents[1].text = course[2]
     return bubble
   })
-  console.log(JSON.stringify(bubbles, null, 2))
   fs.writeFileSync('bubbles.json', JSON.stringify(bubbles, null, 2))
   event.reply([
     {
